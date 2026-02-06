@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de gastos</title>
+    <link rel="stylesheet" href="./control-de-gastos/gastos.css">
+</head>
+<body>
+
+    <main>
+        
+        <h1>Control de Gastos</h1>
+
+        <div class="input-container">
+            <div class="input-content">
+                <label for="">Concepto</label>
+                <input type="text" required id="inputConcept">
+            </div>
+            <div class="input-content">
+                <label for="">Monto</label>
+                <input type="text" required id="inputAmount">
+            </div>
+        </div>
+
+        
+        <button class="btn-save" id="saveBtn">Guardar</button>
+        
+
+        <div class="expense-list" id="expenseList">
+
+        </div>
+
+        <div class="total-amount" id="totalAmount">
+            
+        </div>
+    </main>
+    
+
+    <script src="./control-de-gastos/gastos.js"></script>
+</body>
+</html>

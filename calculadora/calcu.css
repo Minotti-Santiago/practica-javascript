@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    border-radius: 5px;
+    gap: 20px;
+}
+
+.info-container{
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    justify-self: center;
+    align-self: center;
+    grid-template-areas: 
+    'c c ce ce'
+    'number7 number8 number9 division'
+    'number4 number5 number6 multiplicacion'
+    'number1 number2 number3 resta'
+    'number0 number0 igual suma'
+    ;
+
+}
+
+.number1{
+    grid-area: number1;
+}
+.number2{
+    grid-area: number2;
+    
+}
+.number3{
+    grid-area: number3;
+    
+}
+.number4{
+    grid-area: number4;
+    
+}
+.number5{
+    grid-area: number5;
+    
+}
+.number6{
+    grid-area: number6;
+    
+}
+.number7{
+    grid-area: number7;
+    
+}
+.number8{
+    grid-area: number8;
+    
+}
+.number9{
+    grid-area: number9;
+    
+}
+.number0{
+    grid-area: number0;
+    
+}
+.clear{
+    grid-area: c;
+    
+}
+.clear-one{
+    grid-area: ce;
+    
+}
+.suma{
+    grid-area: suma;
+}
+.resta{
+    grid-area: resta;
+}
+.multiplicacion{
+    grid-area: multiplicacion;
+}
+.division{
+    grid-area: division;
+}
+.igual{
+    grid-area: igual;
+}
+
+.info-container button{
+    width: 100%;
+}
+
+.clear, .clear-one{
+    height: 50px;
+}
+
+
+.operations{
+    width: 50px;
+    height: 50px;
+}
+
+.result-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+
+.result{
+    height: 100px;
+    width: 100%;
+    font-size: 4rem;
+
+}
+
+
+
